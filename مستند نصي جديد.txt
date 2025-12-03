@@ -1,40 +1,36 @@
-امثلة علئ دوال النصوص php 
-- echo strlen("Hello"); // 5
-- echo strrev("Hello"); // olleH
-- echo strtoupper("hello"); // HELLO
-- echo strtolower("HELLO"); // hello
-- echo ucfirst("hello"); // Hello
-- echo ucwords("hello world"); // Hello World
-- echo trim("  hi  "); // hi
-- echo ltrim("  hi"); // hi
-- echo rtrim("hi  "); // hi
-- echo substr("abcdef", 1, 3); // bcd
-- echo strpos("hello world","world"); // 6
-- echo str_replace("world","PHP","hello world"); // hello PHP
-- echo str_repeat("Hi ",3); // Hi Hi Hi 
-- echo explode(",","a,b,c")[1]; // b
-- echo implode("-",["a","b","c"]); // a-b-c
-- echo count([1,2,3]); // 3
-- echo in_array(2,[1,2,3]); // 1
-- echo array_search("b",["a","b","c"]); // 1
-- print_r(array_merge([1,2],[3,4]));
-- print_r(array_slice([1,2,3,4],1,2)); // [2,3]
-- print_r(array_reverse([1,2,3])); // [3,2,1]
-- echo max([1,5,3]); // 5
-- echo min([1,5,3]); // 1
-- echo rand(1,10); // رقم عشوائي
-- echo round(3.6); // 4
-- echo ceil(3.2); // 4
-- echo floor(3.9); // 3
-- echo abs(-7); // 7
-- echo pow(2,3); // 8
-- echo sqrt(16); // 4
-- echo date("Y-m-d"); // 2025-11-23
-- echo time(); // الطابع الزمني الحالي
-- echo md5("text"); // تجزئة MD5
-- echo sha1("text"); // تجزئة SHA1
-- var_dump(is_numeric("123")); // bool(true)
-- var_dump(is_string("abc")); // bool(true)
-- var_dump(is_array([1,2])); // bool(true)
-- var_dump(empty("")); // bool(true)
-- var_dump(isset($x)); // false إذا لم يُعرّف
+تدوال المصفوفات (Array Functions) – 15 دالة
+1. `array()` – إنشاء مصفوفة.  
+2. `array_push($arr, $val)` – إضافة عنصر في نهاية المصفوفة.  
+3. `array_pop($arr)` – حذف آخر عنصر.  
+4. `array_shift($arr)` – حذف أول عنصر.  
+5. `array_unshift($arr, $val)` – إضافة عنصر في بداية المصفوفة.  
+6. `in_array($val, $arr)` – التحقق من وجود قيمة داخل المصفوفة.  
+7. `array_key_exists($key, $arr)` – التحقق من وجود مفتاح.  
+8. `array_search($val, $arr)` – البحث عن قيمة وإرجاع المفتاح.  
+9. `array_merge($arr1, $arr2)` – دمج مصفوفتين.  
+10. `array_slice($arr, $start, $length)` – استخراج جزء من المصفوفة.  
+11. `array_splice($arr, $start, $length)` – حذف أو استبدال جزء من المصفوفة.  
+12. `sort($arr)` – ترتيب تصاعدي حسب القيم.  
+13. `rsort($arr)` – ترتيب تنازلي حسب القيم.  
+14. `asort($arr)` – ترتيب حسب القيم مع الحفاظ على المفاتيح.  
+15. `ksort($arr)` – ترتيب حسب المفاتيح.  
+
+---
+
+## ✍️ دوال النصوص (String Functions) – 15 دالة
+1. `strlen($str)` – حساب طول النص.  
+2. `substr($str, $start, $length)` – استخراج جزء من النص.  
+3. `explode($delimiter, $str)` – تقسيم النص إلى مصفوفة.  
+4. `implode($delimiter, $arr)` – دمج عناصر المصفوفة في نص واحد.  
+5. `strpos($str, $search)` – إيجاد موقع أول ظهور لنص معين.  
+6. `str_replace($search, $replace, $str)` – استبدال نصوص.  
+7. `preg_match($pattern, $str)` – البحث باستخدام التعبيرات النمطية.  
+8. `preg_replace($pattern, $replace, $str)` – الاستبدال باستخدام التعبيرات النمطية.  
+9. `strtolower($str)` – تحويل النص إلى أحرف صغيرة.  
+10. `strtoupper($str)` – تحويل النص إلى أحرف كبيرة.  
+11. `trim($str)` – إزالة الفراغات من بداية ونهاية النص.  
+12. `htmlspecialchars($str)` – تحويل الرموز الخاصة إلى صيغة HTML آمنة.  
+13. `str_split($str)` – تقسيم النص إلى مصفوفة من الأحرف.  
+14. `strrev($str)` – عكس النص.  
+15. `ucfirst($str)` – جعل أول حرف كبير.  
+
